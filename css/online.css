@@ -1,0 +1,122 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.content{
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 28%;
+}
+
+.content h1{
+  font-family: "Chivo", sans-serif;
+  font-size: 390%;
+  margin-top: 40%;
+  color: white;
+}
+
+.info{
+  padding: 1%;
+}
+
+/*Thumnails*/
+
+* {margin: 0; padding: 0;}
+ 
+div {
+  margin: 20px;
+}
+ 
+ul {
+  list-style-type: none;
+  width: 1000px;
+}
+ 
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+  height: 100px;
+
+}
+ 
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ 
+li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+/*Thumbnail END*/
+
+/*Fade effect*/
+
+
+
+/*Fade effect end*/
+
+h2{
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration: none;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer p{
+  font-family: 'Fira Sans', sans-serif;
+  float: right;
+  font-size: 12;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 900px) {
+  .content{
+    padding-bottom: 30%;
+  }
+  .content h1{
+    font-size: 450%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content{
+    padding-bottom: 40%;
+  }
+  .content h1{
+    font-size: 200%;
+  }
+  p{
+    font-size: 120%;
+    line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content{
+    padding-bottom: 50%;
+  }
+  .content h1{
+    font-size: 150%;
+  }
+
+  p{
+    font-size: 100%;
+    line-height: 100%;
+  }
+}
