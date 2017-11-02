@@ -1,0 +1,226 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.banner {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(https://static.pexels.com/photos/50632/pexels-photo-50632.jpeg) no-repeat 50% 50%;
+  background-attachment: fixed;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+
+.banner .inner{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content{
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 28%;
+}
+
+.content h1{
+  font-family: "Chivo", sans-serif;
+  font-size: 390%;
+  margin-top: 40%;
+  color: white;
+}
+
+.info{
+  padding: 1%;
+}
+
+
+/*BUTTONS*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.location {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.button {
+  width: 20%;
+  height: 50px;
+  margin: 2%;
+  font-family: "Chivo", sans-serif;
+  font-size: 80px;
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  display: block;
+  padding: 100px 0;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.north:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  transform: translate(-100%, -100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.north:hover:after{
+  transform: translate(0);
+}
+
+.west:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  transform: translate(100%, -100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.west:hover:after{
+  transform: translate(0);
+}
+
+.east:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  transform: translate(-100%, 100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.east:hover:after{
+  transform: translate(0);
+}
+
+.south:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  transform: translate(100%, 100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.south:hover:after{
+  transform: translate(0);
+}
+
+ /*NORTH SOUTH EAST WEST (change images)*/
+.north{
+  background-image: url('https://codebar.io/assets/logo-7345316d16a39b0a5cda277d2cf4cbf3aed1031b9288c0696b8273771ee1fb20.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.clojure{
+  background-image: url('https://res.cloudinary.com/skillsmatter/image/upload/c_crop,g_custom/v1479490586/rtpoar7dqsimgoybxjem.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.codeacademy{
+  background-image: url('http://s3.amazonaws.com/codecademy-blog/assets/logo_blue_dark.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cnf{
+  background-image: url('https://secure.meetupstatic.com/photos/event/a/6/1/b/global_460422523.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*BUTTON END*/
+
+h2{
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration: none;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer p{
+  font-family: 'Fira Sans', sans-serif;
+  float: right;
+  font-size: 12;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 900px) {
+  .content{
+    padding-bottom: 30%;
+  }
+  .content h1{
+    font-size: 450%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content{
+    padding-bottom: 40%;
+  }
+  .content h1{
+    font-size: 200%;
+  }
+  p{
+    font-size: 120%;
+    line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content{
+    padding-bottom: 50%;
+  }
+  .content h1{
+    font-size: 150%;
+  }
+
+  p{
+    font-size: 100%;
+    line-height: 100%;
+  }
+}
