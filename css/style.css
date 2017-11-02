@@ -32,7 +32,7 @@ html, body{
 
 .content h1{
   font-family: "Chivo", sans-serif;
-  font-size: 390%;
+  font-size: 450%;
   margin-top: 40%;
   color: white;
 }
@@ -59,21 +59,21 @@ html {
   margin: 0 auto;
 }
 .button {
-  width: 45%;
-  margin: 2%;
+  width: 46%;
+  margin: 1%;
   font-family: "Chivo", sans-serif;
-  font-size: 80px;
+  font-size: 4em;
   text-decoration: none;
   text-align: center;
   float: left;
   display: block;
-  padding: 100px 0;
+  padding: 107px 0;
   color: white;
   position: relative;
   overflow: hidden;
 }
 
-.north:after {
+.inPerson:after {
   content: "";
   width: 100%;
   height: 100%;
@@ -86,11 +86,11 @@ html {
   transition: all 0.5s ease-in-out;
 }
 
-.north:hover:after{
+.inPerson:hover:after{
   transform: translate(0);
 }
 
-.west:after {
+.onlineClass:after {
   content: "";
   width: 100%;
   height: 100%;
@@ -103,66 +103,58 @@ html {
   transition: all 0.5s ease-in-out;
 }
 
-.west:hover:after{
+.onlineClass:hover:after{
   transform: translate(0);
 }
 
-.east:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.2;
-  transform: translate(-100%, 100%);
-  transition: all 0.5s ease-in-out;
-}
-
-.east:hover:after{
-  transform: translate(0);
-}
-
-.south:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.2;
-  transform: translate(100%, 100%);
-  transition: all 0.5s ease-in-out;
-}
-
-.south:hover:after{
-  transform: translate(0);
-}
-
- /*NORTH SOUTH EAST WEST (change images)*/
-.north{
-  background-image: url('https://static.pexels.com/photos/622041/pexels-photo-622041.jpeg');
+ /*BUTTONS*/
+.inPerson{
+  background-image: url('https://static.pexels.com/photos/7102/notes-macbook-study-conference.jpg');
   background-size: cover;
 }
 
-.east{
-  background-image: url('https://static.pexels.com/photos/622041/pexels-photo-622041.jpeg');
-  background-size: cover;
-}
-
-.south{
-  background-image: url('https://static.pexels.com/photos/622041/pexels-photo-622041.jpeg');
-  background-size: cover;
-}
-
-.west{
-  background-image: url('https://static.pexels.com/photos/622041/pexels-photo-622041.jpeg');
+.onlineClass{
+  background-image: url('https://static.pexels.com/photos/34676/pexels-photo.jpg');
   background-size: cover;
 }
 
 /*BUTTON END*/
+
+/*ONLINE*/
+* {margin: 0; padding: 0;}
+
+div {
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+  width: 1000px;
+}
+
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+  height: 100px;
+
+}
+
+li {
+  padding: 10px;
+  overflow: auto;
+}
+
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+/*Thumbnail END*/
+/*ONLINE END*/
 
 h2{
   font-family: 'Fira Sans', sans-serif;
@@ -173,7 +165,7 @@ p{
   font-family: 'Raleway', sans-serif;
 }
 
-.footer p{
+.footer{
   font-family: 'Fira Sans', sans-serif;
   float: right;
   font-size: 12;
